@@ -145,8 +145,10 @@ public class AddMovieActivity extends AppCompatActivity {
             case R.id.logout:
                 auth.signOut();
                 startActivity(new Intent(AddMovieActivity.this, LoginActivity.class));
+                break;
             case R.id.addMovie:
                 startActivity(new Intent(AddMovieActivity.this, AddMovieActivity.class));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -97,8 +97,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logout:
                 auth.signOut();
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                break;
             case R.id.addMovie:
                 startActivity(new Intent(MainActivity.this, AddMovieActivity.class));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
